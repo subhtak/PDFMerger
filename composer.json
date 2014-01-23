@@ -4,7 +4,23 @@
 	"description": "Wrapper for fpdf and fpdi to help merge pdf files together.",
 	"homepage": "http://pdfmerger.codeplex.com",
 	"license": ["GPL-2.0"],
+    "authors": [
+        {
+            "name": "Jarrod Nettles",
+            "email": "jarrod@squarecrow.com"
+        },
+        {
+            "name": "Jan Waś",
+            "email": "jan@was.net.pl"
+        }
+    ],
 	"require": {
-		"php": ">=5.0"
-	}
+		"php": ">=5.0",
+        "itbz/fpdi": "~1.4", 
+	},
+    "autoload": {
+        "psr-0": {
+            "pdfmerger": "src/"
+        }
+    }
 }

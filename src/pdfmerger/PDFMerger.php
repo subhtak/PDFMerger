@@ -1,4 +1,7 @@
 <?php
+
+namespace pdfmerger;
+
 /**
  *  PDFMerger created by Jarrod Nettles December 2009
  *  jarrod@squarecrow.com
@@ -32,8 +35,8 @@ class PDFMerger
 	 */
 	public function __construct()
 	{
-		require_once('fpdf/fpdf.php');
-		require_once('fpdi/fpdi.php');
+		//require_once('fpdf/fpdf.php');
+		//require_once('fpdi/fpdi.php');
 	}
 	
 	/**
@@ -71,7 +74,7 @@ class PDFMerger
 	{
 		if(!isset($this->_files) || !is_array($this->_files)): throw new exception("No PDFs to merge."); endif;
 		
-		$fpdi = new FPDI;
+		$fpdi = new \fpdi\FPDI;
 		
 		//merger operations
 		foreach($this->_files as $file)
