@@ -115,15 +115,8 @@ class PDFMerger
 		}
 		else
 		{
-			if($fpdi->Output($outputpath, $mode))
-			{
-				return true;
-			}
-			else
-			{
-				throw new exception("Error outputting PDF to '$outputmode'.");
-				return false;
-			}
+			$fpdi->Output($outputpath, $mode);
+			return true;
 		}
 		
 		

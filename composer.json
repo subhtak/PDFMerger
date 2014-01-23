@@ -1,0 +1,10 @@
+{
+	"name": "nineinchnick/PDFMerger",
+	"type": "library",
+	"description": "Wrapper for fpdf and fpdi to help merge pdf files together.",
+	"homepage": "http://pdfmerger.codeplex.com",
+	"license": ["GPL-2.0"],
+	"require": {
+		"php": ">=5.0"
+	}
+}
